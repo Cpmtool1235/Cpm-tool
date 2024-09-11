@@ -6,7 +6,7 @@ import os, signal, sys
 import subprocess
 import progressbar
 from getpass import getpass
-from cybercpm import CyberCPM
+from cpmnuker import CPMNuker
 from pystyle import Add, Center, Anime, Colors, Colorate, Write, System
 from colorama import Fore, Style, init
 from pystyle import System as pySystem
@@ -98,7 +98,7 @@ def banner():
     print(Colorate.Horizontal(Colors.red_to_yellow,(versi)))
     text = "=" * 58
     print(Colorate.Horizontal(Colors.yellow_to_green,(text)))
-    print("< Wajib Logout Account CPM Sebelum Menggunakan Tools Ini >")
+    print("< Logout Your CPM Account Before Using It >")
 
 def load_key_data(cpm):
     data = cpm.get_key_data()
@@ -145,7 +145,7 @@ if __name__ == "__main__":
         acc_password = prompt_valid_value("  [?] Kata Sandi Akun", "Kata Sandi", password=False)
         acc_access_key = prompt_valid_value("  [?] Key Access", "Kunci Akses", password=False)
         print(f"{Fore.CYAN}  [%] Mencoba Masuk. ", end=None)
-        cpm = CyberCPM(acc_access_key)
+        cpm = CPMNuker(acc_access_key)
         login_response = cpm.login(acc_email, acc_password)
         if login_response != 0:
             if login_response == 100:
