@@ -7,10 +7,10 @@ from rich.console import Console
 from rich.prompt import Prompt, IntPrompt
 from rich.text import Text
 from rich.style import Style
-from cpmtool import CPMtool
+from cpmnuker import CPMNuker
 
-__CHANNEL_USERNAME__ = "cpmtool"
-__GROUP_USERNAME__   = "cpmtool_chat"
+__CHANNEL_USERNAME__ = "CPMAizal"
+__GROUP_USERNAME__   = "CPMAizal"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -52,7 +52,7 @@ def banner(console):
     console.print("[bold][red]==================================================================[/red][/bold]")
     console.print("\t   𝐏𝐋𝐄𝐀𝐒𝐄 𝐋𝐎𝐆𝐎𝐔𝐓 𝐅𝐑𝐎𝐌 𝐂𝐏𝐌 𝐁𝐄𝐅𝐎𝐑𝐄 𝐔𝐒𝐈𝐍𝐆 𝐓𝐇𝐈𝐒 𝐓𝐎𝐎𝐋")
     console.print("   [bold][red]  𝐒𝐇𝐀𝐑𝐈𝐍𝐆 𝐓𝐇𝐄 𝐀𝐂𝐂𝐄𝐒𝐒 𝐊𝐄𝐘 𝐈𝐒 𝐍𝐎𝐓 𝐀𝐋𝐋𝐎𝐖𝐄𝐃 𝐀𝐍𝐃 𝐖𝐈𝐋𝐋 𝐁𝐄 𝐁𝐋𝐎𝐂𝐊𝐄𝐃[/bold][red]")
-    console.print(f"             [bold green]𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐁𝐎𝐓 [/bold green]: [bold cyan]@cpmsalebot[/bold cyan] 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 [bold cyan]@cpmtool[/bold cyan]") 
+    console.print(f"             [bold green]𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 [/bold green]: [bold cyan]@CPMAizal[/bold cyan] 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐂𝐡𝐚𝐭[bold cyan]@CPMAizalChat[/bold cyan]") 
     console.print("[bold][red]==================================================================[/red][/bold]")
 
 def load_player_data(cpm):
@@ -108,7 +108,7 @@ def interpolate_color(start_color, end_color, fraction):
     interpolated_rgb = tuple(int(start + fraction * (end - start)) for start, end in zip(start_rgb, end_rgb))
     return "{:02x}{:02x}{:02x}".format(*interpolated_rgb)
 
-#cpmtool @abobalol228 @cpmtool
+#cpmtool @ItzAizal @CPMAizal
 
 def rainbow_gradient_string(customer_name):
     modified_string = ""
@@ -130,7 +130,7 @@ if __name__ == "__main__":
         acc_password = prompt_valid_value("[bold][?] Account Password[/bold]", "Password", password=False)
         acc_access_key = prompt_valid_value("[bold][?] Access Key[/bold]", "Access Key", password=False)
         console.print("[bold cyan][%] Trying to Login[/bold cyan]: ", end=None)
-        cpm = CPMtool(acc_access_key)
+        cpm = CPMNuker(acc_access_key)
         login_response = cpm.login(acc_email, acc_password)
         if login_response != 0:
             if login_response == 100:
