@@ -7,8 +7,8 @@ from rich.text import Text
 from rich.style import Style
 from carparktool import CarParkTool
 
-__CHANNEL_USERNAME__ = "HzToolsCPM"
-__GROUP_USERNAME__   = "HzToolsCPMChat"
+__CHANNEL_USERNAME__ = "CarParkingTool"
+__GROUP_USERNAME__   = "CarParkingToolChat"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -50,7 +50,7 @@ def banner(console):
     console.print("[bold][red]==================================================================[/red][/bold]")
     console.print("\t   𝐏𝐋𝐄𝐀𝐒𝐄 𝐋𝐎𝐆𝐎𝐔𝐓 𝐅𝐑𝐎𝐌 𝐂𝐏𝐌 𝐁𝐄𝐅𝐎𝐑𝐄 𝐔𝐒𝐈𝐍𝐆 𝐓𝐇𝐈𝐒 𝐓𝐎𝐎𝐋")
     console.print("   [bold][red]  𝐒𝐇𝐀𝐑𝐈𝐍𝐆 𝐓𝐇𝐄 𝐀𝐂𝐂𝐄𝐒𝐒 𝐊𝐄𝐘 𝐈𝐒 𝐍𝐎𝐓 𝐀𝐋𝐋𝐎𝐖𝐄𝐃 𝐀𝐍𝐃 𝐖𝐈𝐋𝐋 𝐁𝐄 𝐁𝐋𝐎𝐂𝐊𝐄𝐃[/bold][red]")
-    console.print(f"             [bold green]𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 [/bold green]: [bold cyan]@HzToolsCPM[/bold cyan] 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐂𝐡𝐚𝐭[bold cyan]@HzToolsCPMChat[/bold cyan]") 
+    console.print(f"             [bold green]𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 [/bold green]: [bold cyan]@CarParkingTool[/bold cyan] 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐂𝐡𝐚𝐭[bold cyan]@CarParkingToolChat[/bold cyan]") 
     console.print("[bold][red]==================================================================[/red][/bold]")
 
 def load_player_data(cpm):
