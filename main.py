@@ -1,7 +1,3 @@
-Owner Of This Tool Telegram @ItzAizal Dont Buy From Any Scammer 
-
-
-
 import random
 from time import sleep
 import os, signal, sys
