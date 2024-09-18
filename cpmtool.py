@@ -9,7 +9,7 @@ from time import sleep
 
 BASE_URL: str = "https://cpmnuker.anasov.ly/api"
 
-class CarParkTool:
+class CPMTool:
 
     def __init__(self, access_key) -> None:
         self.auth_token = None
